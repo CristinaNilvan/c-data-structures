@@ -5,11 +5,11 @@ typedef struct nodeType
 {
     int key;
     struct nodeType * next;
-} NodeT;
+} Node;
 
-NodeT * allocateNode(int key)
+Node * allocateNode(int key)
 {
-    NodeT * node = (NodeT *)malloc(sizeof(NodeT));
+    Node * node = (Node *)malloc(sizeof(Node));
 
     node->key = key;
     node->next = NULL;
@@ -17,57 +17,27 @@ NodeT * allocateNode(int key)
     return node;
 }
 
-void insertFirst(NodeT ** first, NodeT ** last, int givenKey)
+void insertFirst(Node ** first, Node ** last, int givenKey)
 {
-    NodeT * node = allocateNode(givenKey);
+    Node * node = allocateNode(givenKey);
 
-    if (*first == NULL)
-        *last = node;
-    else
-        node->next = *first;
+    *first == NULL ? (*last = node) : (node->next = *first);
 
     *first = node;
 }
 
-void insertLast(NodeT ** first, NodeT ** last, int givenKey)
+void insertLast(Node ** first, Node ** last, int givenKey)
 {
-    NodeT * node = allocateNode(givenKey);
+    Node * node = allocateNode(givenKey);
 
-    if (*last == NULL)
-        *first = node;
-    else
-        (*last)->next = node;
+    *last == NULL ? (*first = node) : ((*last)->next = node);
 
     *last = node;
 }
 
-void insertAfterKey(NodeT ** first, NodeT ** last, int afterKey, int givenKey)
+Node * searchNode(Node * first, int givenKey)
 {
-    NodeT * current = *first;
-
-    while (current != NULL)
-    {
-        if (current->key == afterKey)
-            break;
-
-        current = current->next;
-    }
-
-    if (current != NULL)
-    {
-        NodeT * node = allocateNode(givenKey);
-
-        node->next = current->next;
-        current->next = node;
-
-        if (current == *last)
-            *last = node;
-    }
-}
-
-NodeT * searchNode(NodeT * first, int givenKey)
-{
-    NodeT * current = first;
+    Node * current = first;
 
     while (current != NULL)
     {
@@ -80,49 +50,79 @@ NodeT * searchNode(NodeT * first, int givenKey)
     return current;
 }
 
-void deleteFirst(NodeT ** first, NodeT ** last)
+void insertAfterKey(Node ** first, Node ** last, int afterKey, int givenKey)
 {
-    NodeT * toDelete;
+    Node * current = *first;
 
-    if (*first != NULL)
+    current = searchNode(current, afterKey);
+
+    if (current == NULL)
+        return;
+
+    Node * node = allocateNode(givenKey);
+
+    node->next = current->next;
+    current->next = node;
+
+    if (current == *last)
+        *last = node;
+}
+
+void deleteFirst(Node ** first, Node ** last)
+{
+    Node * toDelete;
+
+    if (*first == NULL)
+        return;
+
+    toDelete = *first;
+    *first = (*first)->next;
+
+    free(toDelete);
+
+    if (*first == NULL)
+        *last = NULL;
+}
+
+void getLastTwoElementsAddress(Node *const *last, Node **toDelete, Node **previousNode)
+{
+    while ((*toDelete) != *last)
     {
-        toDelete = *first;
-        *first = (*first)->next;
-
-        free(toDelete);
-
-        if (*first == NULL)
-            *last = NULL;
+        (*previousNode) = (*toDelete);
+        (*toDelete) = (*toDelete)->next;
     }
 }
 
-void deleteLast(NodeT ** first, NodeT ** last)
-{
-    NodeT * toDelete = *first;
-    NodeT * previousNode = NULL;
-
-    if (toDelete != NULL)
-    {
-        while (toDelete != *last)
-        {
-            previousNode = toDelete;
-            toDelete = toDelete->next;
-        }
-
-        if (toDelete == *first)
-            first = last = NULL;
-        else
-        {
-            previousNode->next = NULL;
-            *last = previousNode;
-        }
-    }
+void setLastElement(Node **last, Node *previousNode) {
+    previousNode->next = NULL;
+    *last = previousNode;
 }
 
-void deleteGivenKey(NodeT ** first, NodeT ** last, int givenKey)
+void setNodeToDelete(Node **first, Node **last, const Node *toDelete, Node *previousNode) {
+
+    if (toDelete == *first)
+        first = last = NULL;
+    else
+        setLastElement(last, previousNode);
+}
+
+void deleteLast(Node ** first, Node ** last)
 {
-    NodeT * toDelete = *first;
-    NodeT * previousNode = NULL;
+    Node * toDelete = *first;
+    Node * previousNode = NULL;
+
+    if (toDelete == NULL)
+        return;
+
+    getLastTwoElementsAddress(last, &toDelete, &previousNode);
+
+    setNodeToDelete(first, last, toDelete, previousNode);
+}
+
+void deleteGivenKey(Node ** first, Node ** last, int givenKey)
+{
+    Node * toDelete = *first;
+    Node * previousNode = NULL;
 
     while (toDelete != NULL)
     {
@@ -133,30 +133,30 @@ void deleteGivenKey(NodeT ** first, NodeT ** last, int givenKey)
         toDelete = toDelete->next;
     }
 
-    if (toDelete != NULL)
+    if (toDelete == NULL)
+        return;
+
+    if (toDelete == *first)
     {
-        if (toDelete == *first)
-        {
-            *first = (*first)->next;
+        *first = (*first)->next;
 
-            free(toDelete);
+        free(toDelete);
 
-            if (*first == NULL)
-                *last = NULL;
-        }
-        else
-        {
-            previousNode->next = toDelete->next;
+        if (*first == NULL)
+            *last = NULL;
+    }
+    else
+    {
+        previousNode->next = toDelete->next;
 
-            if (toDelete == *last)
-                *last = previousNode;
+        if (toDelete == *last)
+            *last = previousNode;
 
-            free(toDelete);
-        }
+        free(toDelete);
     }
 }
 
-void printList(NodeT * node)
+void printList(Node * node)
 {
     if (node == NULL)
     {
@@ -168,7 +168,7 @@ void printList(NodeT * node)
     printList(node->next);
 }
 
-void testsTheInsertion(NodeT ** first, NodeT ** last)
+void testsTheInsertion(Node ** first, Node ** last)
 {
     insertFirst(first, last, 4);
     insertFirst(first, last, 1);
@@ -180,7 +180,7 @@ void testsTheInsertion(NodeT ** first, NodeT ** last)
     insertAfterKey(first, last, 3, 25);
 }
 
-void testsTheSearch(NodeT * first)
+void testsTheSearch(Node * first)
 {
     if (searchNode(first, 2) != NULL)
         printf("The key was found. \n");
@@ -193,7 +193,7 @@ void testsTheSearch(NodeT * first)
         printf("The key was not found. \n");
 }
 
-void testsTheDeletion(NodeT ** first, NodeT ** last)
+void testsTheDeletion(Node ** first, Node ** last)
 {
     deleteFirst(first, last);
 
@@ -204,8 +204,8 @@ void testsTheDeletion(NodeT ** first, NodeT ** last)
 
 int main()
 {
-    NodeT * first = NULL;
-    NodeT * last = NULL;
+    Node * first = NULL;
+    Node * last = NULL;
 
     testsTheInsertion(&first, &last);
     testsTheSearch(first);
