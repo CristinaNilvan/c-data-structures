@@ -6,17 +6,18 @@ typedef struct nodeType
     int key;
     struct nodeType * next;
     struct nodeType * prev;
-} NodeDL;
+
+} Node;
 
 struct listHeader
 {
-    NodeDL * first;
-    NodeDL * last;
+    Node * first;
+    Node * last;
 };
 
-NodeDL * allocateNode(int key)
+Node * allocateNode(int key)
 {
-    NodeDL * node = (NodeDL *)malloc(sizeof(NodeDL));
+    Node * node = (Node *)malloc(sizeof(Node));
 
     node->key = key;
     node->next = NULL;
@@ -25,72 +26,40 @@ NodeDL * allocateNode(int key)
     return node;
 }
 
+void setExtremesToNode(struct listHeader *list, Node *node) {
+    list->first = node;
+    list->last = node;
+}
+
+void addKeyToFirstPartOfList(struct listHeader *list, Node *node) {
+    node->next = list->first;
+    list->first->prev = node;
+    list->first = node;
+}
+
 void insertFirst(struct listHeader * list, int givenKey)
 {
-    NodeDL * node = allocateNode(givenKey);
+    Node * node = allocateNode(givenKey);
 
-    if (list->first == NULL)
-    {
-        list->first = node;
-        list->last = node;
-    }
-    else
-    {
-        node->next = list->first;
-        list->first->prev = node;
-        list->first = node;
-    }
+    list->first == NULL ? setExtremesToNode(list, node) : addKeyToFirstPartOfList(list, node);
+}
+
+void addKeyToLastPartOfList(struct listHeader *list, Node *node) {
+    node->prev = list->last;
+    list->last->next = node;
+    list->last = node;
 }
 
 void insertLast(struct listHeader * list, int givenKey)
 {
-    NodeDL * node = allocateNode(givenKey);
+    Node * node = allocateNode(givenKey);
 
-    if (list->last == NULL)
-    {
-        list->first = node;
-        list->last = node;
-    }
-    else
-    {
-        node->prev = list->last;
-        list->last->next = node;
-        list->last = node;
-    }
+    list->last == NULL ? setExtremesToNode(list, node) : addKeyToLastPartOfList(list, node);
 }
 
-void insertAfterKey(struct listHeader * list, int afterKey, int givenKey)
+Node * searchNode(struct listHeader * list, int givenKey)
 {
-    NodeDL * current = list->first;
-
-    while (current != NULL)
-    {
-        if (current->key == afterKey)
-            break;
-
-        current = current->next;
-    }
-
-    if (current != NULL)
-    {
-        NodeDL * node = allocateNode(givenKey);
-
-        node->prev = current;
-        node->next = current->next;
-
-        if (current->next != NULL)
-            current->next->prev = node;
-
-        current->next = node;
-
-        if (list->last == current)
-            list->last = node;
-    }
-}
-
-NodeDL * searchNode(struct listHeader * list, int givenKey)
-{
-    NodeDL * current = list->first;
+    Node * current = list->first;
 
     while (current != NULL)
     {
@@ -104,55 +73,65 @@ NodeDL * searchNode(struct listHeader * list, int givenKey)
     return current;
 }
 
+void insertAfterKey(struct listHeader * list, int afterKey, int givenKey)
+{
+    Node * current = searchNode(list, afterKey);
+
+    if (current == NULL)
+        return;
+
+    Node * node = allocateNode(givenKey);
+
+    node->prev = current;
+    node->next = current->next;
+
+    if (current->next != NULL)
+        current->next->prev = node;
+
+    current->next = node;
+
+    if (list->last == current)
+        list->last = node;
+}
+
+
 void deleteFirst(struct listHeader * list)
 {
-    NodeDL * toDelete;
+    Node * toDelete;
 
-    if (list->first != NULL)
-    {
-        toDelete = list->first;
-        list->first = list->first->next;
+    if (list->first == NULL)
+        return;
 
-        free(toDelete);
+    toDelete = list->first;
+    list->first = list->first->next;
 
-        if (list->first == NULL)
-            list->last = NULL;
-        else
-            list->first->prev = NULL;
-    }
+    free(toDelete);
+
+    (list->first == NULL) ? list->last = NULL : (list->first->prev = NULL);
 }
 
 void deleteLast(struct listHeader * list)
 {
-    NodeDL * toDelete = list->last;
+    Node * toDelete = list->last;
 
-    if (toDelete != NULL)
-    {
-        toDelete = list->last;
-        list->last = list->last->prev;
+    if (toDelete == NULL)
+        return;
 
-        if (list->last == NULL)
-            list->first = NULL;
-        else
-            list->last->next = NULL;
-    }
+    toDelete = list->last;
+    list->last = list->last->prev;
+
+    (list->last == NULL) ? list->first = NULL : (list->last->next = NULL);
 
     free(toDelete);
 }
 
 void deleteKey(struct listHeader * list, int givenKey)
 {
-    NodeDL * toDelete = searchNode(list, givenKey);
+    Node * toDelete = searchNode(list, givenKey);
 
-    if (toDelete->prev != NULL)
-        toDelete->prev->next = toDelete->next;
-    else
-        list->first = toDelete->next;
+    toDelete->prev != NULL ? toDelete->prev->next = toDelete->next : (list->first = toDelete->next);
 
-    if (toDelete->next != NULL)
-        toDelete->next->prev = toDelete->prev;
-    else
-        list->last = toDelete->prev;
+    toDelete->next != NULL ? toDelete->next->prev = toDelete->prev : (list->last = toDelete->prev);
 
     free(toDelete);
 }
