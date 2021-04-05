@@ -1,0 +1,3 @@
+C:/Users/crist/OneDrive/Desktop/Exercitii/intersects-linked-lists/cmake-build-debug/CMakeFiles/intersects_linked_lists.dir
+C:/Users/crist/OneDrive/Desktop/Exercitii/intersects-linked-lists/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/crist/OneDrive/Desktop/Exercitii/intersects-linked-lists/cmake-build-debug/CMakeFiles/rebuild_cache.dir
