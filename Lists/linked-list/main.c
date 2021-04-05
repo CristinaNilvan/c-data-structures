@@ -84,7 +84,7 @@ void deleteFirst(Node ** first, Node ** last)
         *last = NULL;
 }
 
-void getLastTwoElementsAddress(Node *const *last, Node **toDelete, Node **previousNode)
+void getLastTwoElementsAddress(Node ** last, Node ** toDelete, Node ** previousNode)
 {
     while ((*toDelete) != *last)
     {
@@ -93,12 +93,14 @@ void getLastTwoElementsAddress(Node *const *last, Node **toDelete, Node **previo
     }
 }
 
-void setLastElement(Node **last, Node *previousNode) {
+void setLastElement(Node ** last, Node * previousNode)
+{
     previousNode->next = NULL;
     *last = previousNode;
 }
 
-void setNodeToDelete(Node **first, Node **last, const Node *toDelete, Node *previousNode) {
+void setNodeToDelete(Node ** first, Node ** last, const Node * toDelete, Node * previousNode)
+{
 
     if (toDelete == *first)
         first = last = NULL;
