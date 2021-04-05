@@ -93,7 +93,7 @@ void getLastTwoElementsAddress(Node *const *last, Node **toDelete, Node **previo
     }
 }
 
-void setLastElement(Node **last, Node *previousNode) {
+void setLastElement(Node **last, Node *previousNode){
     previousNode->next = NULL;
     *last = previousNode;
 }
