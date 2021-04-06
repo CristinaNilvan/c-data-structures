@@ -218,8 +218,10 @@ void printPretty(Node * root, int space)
     printPretty(root->right, space);
 
     printf("\n");
+
     for (int i = COUNT; i < space; i++)
         printf(" ");
+
     printf("%d \n", root->key);
 
     printPretty(root->left, space);
@@ -239,8 +241,8 @@ void testsInsertion(Node ** root)
 void testsSearch(Node * root)
 {
     int key = 15;
-
     Node * node = searchKey(root, key);
+
     if (node != NULL)
         printf(" Node with key = %d has been found. \n\n" , key);
     else
@@ -253,6 +255,7 @@ void testsSuccessor(Node * root)
     Node * node = searchKey(root, key);
 
     Node * successor = findSuccessor(root, node);
+
     if (successor != NULL)
         printf(" Node with key = %d has %d as successor. \n\n" , node->key, successor->key);
     else
@@ -265,6 +268,7 @@ void testsPredecessor(Node * root)
     Node * node = searchKey(root, key);
 
     Node * predecessor = findPredecessor(root, node);
+
     if (predecessor != NULL)
         printf(" Node with key = %d has %d as predecessor. \n\n" , node->key, predecessor->key);
     else
@@ -274,7 +278,9 @@ void testsPredecessor(Node * root)
 void testsDeletion(Node ** root)
 {
     int key = 15;
+    
     printf(" Node to delete : %d. \n\n", key);
+
     *root = deleteKey(*root, key);
 
     preOrder(*root);
