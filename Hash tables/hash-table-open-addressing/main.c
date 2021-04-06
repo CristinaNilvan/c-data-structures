@@ -11,10 +11,11 @@ typedef struct cell
 
 enum {FREE, OCCUPIED};
 
-void printTable(Cell * hashTable, int m)
+void printTable(Cell * hashTable, int size)
 {
     printf("\n\n The hash table is : \n");
-    for (int i = 0; i < m; i++)
+
+    for (int i = 0; i < size; i++)
     {
         if(hashTable[i].status == OCCUPIED)
             printf("Table[%d] = %d \n", i, hashTable[i].key);
@@ -93,7 +94,7 @@ void testsInsertion(Cell * hashTable, int size, int (*hashFunction)(int k, int m
 
     int values[] = {19, 36, 5, 21, 4, 26, 14, 17};
 
-    for(int i = 0; i < sizeof(values) / sizeof(int); i++)
+    for (int i = 0; i < sizeof(values) / sizeof(int); i++)
         insertKey(values[i], hashTable, size, hashFunction);
 
     printTable(hashTable, size);
@@ -105,12 +106,12 @@ void testsSearch(Cell * hashTable, int size, int (*hashFunction)(int k, int m, i
 
     int values[] = {19, 36, 5, 21, 4, 26, 14, 17};
 
-    for(int i = 0; i < sizeof(values) / sizeof(int); i++)
+    for (int i = 0; i < sizeof(values) / sizeof(int); i++)
         insertKey(values[i], hashTable, size, hashFunction);
 
     printf("\n");
 
-    for(int i = 0; i < sizeof(values) / sizeof(int); i++)
+    for (int i = 0; i < sizeof(values) / sizeof(int); i++)
     {
         int position = searchKey(values[i], hashTable, size, linearProbing);
 
