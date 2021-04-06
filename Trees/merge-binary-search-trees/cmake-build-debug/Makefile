@@ -67,10 +67,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Code\git\c-data-structures\Lists\sort-and-concatenate-linked-lists
+CMAKE_SOURCE_DIR = C:\Users\crist\OneDrive\Desktop\Exercitii\merge-binary-search-trees
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Code\git\c-data-structures\Lists\sort-and-concatenate-linked-lists\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\crist\OneDrive\Desktop\Exercitii\merge-binary-search-trees\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Lists\sort-and-concatenate-linked-lists\cmake-build-debug\CMakeFiles D:\Code\git\c-data-structures\Lists\sort-and-concatenate-linked-lists\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\crist\OneDrive\Desktop\Exercitii\merge-binary-search-trees\cmake-build-debug\CMakeFiles C:\Users\crist\OneDrive\Desktop\Exercitii\merge-binary-search-trees\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Lists\sort-and-concatenate-linked-lists\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\crist\OneDrive\Desktop\Exercitii\merge-binary-search-trees\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named sort_and_concatenate_linked_lists
+# Target rules for targets named merge_binary_search_trees
 
 # Build rule for target.
-sort_and_concatenate_linked_lists: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sort_and_concatenate_linked_lists
-.PHONY : sort_and_concatenate_linked_lists
+merge_binary_search_trees: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 merge_binary_search_trees
+.PHONY : merge_binary_search_trees
 
 # fast build rule for target.
-sort_and_concatenate_linked_lists/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sort_and_concatenate_linked_lists.dir\build.make CMakeFiles/sort_and_concatenate_linked_lists.dir/build
-.PHONY : sort_and_concatenate_linked_lists/fast
+merge_binary_search_trees/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\merge_binary_search_trees.dir\build.make CMakeFiles/merge_binary_search_trees.dir/build
+.PHONY : merge_binary_search_trees/fast
 
 main.obj: main.c.obj
 
@@ -148,7 +148,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sort_and_concatenate_linked_lists.dir\build.make CMakeFiles/sort_and_concatenate_linked_lists.dir/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\merge_binary_search_trees.dir\build.make CMakeFiles/merge_binary_search_trees.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -157,7 +157,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sort_and_concatenate_linked_lists.dir\build.make CMakeFiles/sort_and_concatenate_linked_lists.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\merge_binary_search_trees.dir\build.make CMakeFiles/merge_binary_search_trees.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -166,7 +166,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sort_and_concatenate_linked_lists.dir\build.make CMakeFiles/sort_and_concatenate_linked_lists.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\merge_binary_search_trees.dir\build.make CMakeFiles/merge_binary_search_trees.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -177,7 +177,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... sort_and_concatenate_linked_lists
+	@echo ... merge_binary_search_trees
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

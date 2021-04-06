@@ -1,8 +1,8 @@
-# Install script for directory: D:/Code/git/c-data-structures/Lists/sort-and-concatenate-linked-lists
+# Install script for directory: C:/Users/crist/OneDrive/Desktop/Exercitii/merge-binary-search-trees
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/sort_and_concatenate_linked_lists")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/merge_binary_search_trees")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/Code/git/c-data-structures/Lists/sort-and-concatenate-linked-lists/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/crist/OneDrive/Desktop/Exercitii/merge-binary-search-trees/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

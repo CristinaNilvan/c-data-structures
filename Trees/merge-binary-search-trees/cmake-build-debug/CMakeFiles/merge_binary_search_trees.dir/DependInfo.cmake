@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "D:/Code/git/c-data-structures/Lists/sort-and-concatenate-linked-lists/main.c" "D:/Code/git/c-data-structures/Lists/sort-and-concatenate-linked-lists/cmake-build-debug/CMakeFiles/sort_and_concatenate_linked_lists.dir/main.c.obj"
+  "C:/Users/crist/OneDrive/Desktop/Exercitii/merge-binary-search-trees/main.c" "C:/Users/crist/OneDrive/Desktop/Exercitii/merge-binary-search-trees/cmake-build-debug/CMakeFiles/merge_binary_search_trees.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

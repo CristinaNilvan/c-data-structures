@@ -63,16 +63,16 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Code\git\c-data-structures\Lists\sort-and-concatenate-linked-lists
+CMAKE_SOURCE_DIR = C:\Users\crist\OneDrive\Desktop\Exercitii\merge-binary-search-trees
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Code\git\c-data-structures\Lists\sort-and-concatenate-linked-lists\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\crist\OneDrive\Desktop\Exercitii\merge-binary-search-trees\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/sort_and_concatenate_linked_lists.dir/all
+all: CMakeFiles/merge_binary_search_trees.dir/all
 
 .PHONY : all
 
@@ -82,36 +82,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/sort_and_concatenate_linked_lists.dir/clean
+clean: CMakeFiles/merge_binary_search_trees.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/sort_and_concatenate_linked_lists.dir
+# Target rules for target CMakeFiles/merge_binary_search_trees.dir
 
 # All Build rule for target.
-CMakeFiles/sort_and_concatenate_linked_lists.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sort_and_concatenate_linked_lists.dir\build.make CMakeFiles/sort_and_concatenate_linked_lists.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sort_and_concatenate_linked_lists.dir\build.make CMakeFiles/sort_and_concatenate_linked_lists.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Code\git\c-data-structures\Lists\sort-and-concatenate-linked-lists\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target sort_and_concatenate_linked_lists"
-.PHONY : CMakeFiles/sort_and_concatenate_linked_lists.dir/all
+CMakeFiles/merge_binary_search_trees.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\merge_binary_search_trees.dir\build.make CMakeFiles/merge_binary_search_trees.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\merge_binary_search_trees.dir\build.make CMakeFiles/merge_binary_search_trees.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\crist\OneDrive\Desktop\Exercitii\merge-binary-search-trees\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target merge_binary_search_trees"
+.PHONY : CMakeFiles/merge_binary_search_trees.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/sort_and_concatenate_linked_lists.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Lists\sort-and-concatenate-linked-lists\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/sort_and_concatenate_linked_lists.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Lists\sort-and-concatenate-linked-lists\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/sort_and_concatenate_linked_lists.dir/rule
+CMakeFiles/merge_binary_search_trees.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\crist\OneDrive\Desktop\Exercitii\merge-binary-search-trees\cmake-build-debug\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/merge_binary_search_trees.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\crist\OneDrive\Desktop\Exercitii\merge-binary-search-trees\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/merge_binary_search_trees.dir/rule
 
 # Convenience name for target.
-sort_and_concatenate_linked_lists: CMakeFiles/sort_and_concatenate_linked_lists.dir/rule
+merge_binary_search_trees: CMakeFiles/merge_binary_search_trees.dir/rule
 
-.PHONY : sort_and_concatenate_linked_lists
+.PHONY : merge_binary_search_trees
 
 # clean rule for target.
-CMakeFiles/sort_and_concatenate_linked_lists.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sort_and_concatenate_linked_lists.dir\build.make CMakeFiles/sort_and_concatenate_linked_lists.dir/clean
-.PHONY : CMakeFiles/sort_and_concatenate_linked_lists.dir/clean
+CMakeFiles/merge_binary_search_trees.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\merge_binary_search_trees.dir\build.make CMakeFiles/merge_binary_search_trees.dir/clean
+.PHONY : CMakeFiles/merge_binary_search_trees.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
