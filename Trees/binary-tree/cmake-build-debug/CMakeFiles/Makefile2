@@ -63,10 +63,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\crist\OneDrive\Desktop\Github\binary-tree
+CMAKE_SOURCE_DIR = D:\Code\git\c-data-structures\Trees\binary-tree
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\crist\OneDrive\Desktop\Github\binary-tree\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Code\git\c-data-structures\Trees\binary-tree\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -93,14 +93,14 @@ clean: CMakeFiles/binary_tree.dir/clean
 CMakeFiles/binary_tree.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\binary_tree.dir\build.make CMakeFiles/binary_tree.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\binary_tree.dir\build.make CMakeFiles/binary_tree.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\crist\OneDrive\Desktop\Github\binary-tree\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target binary_tree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Code\git\c-data-structures\Trees\binary-tree\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target binary_tree"
 .PHONY : CMakeFiles/binary_tree.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/binary_tree.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\crist\OneDrive\Desktop\Github\binary-tree\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Trees\binary-tree\cmake-build-debug\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/binary_tree.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\crist\OneDrive\Desktop\Github\binary-tree\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Trees\binary-tree\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/binary_tree.dir/rule
 
 # Convenience name for target.

@@ -29,7 +29,7 @@ Node * createBinaryTreeFromFile(FILE * file)
 
         if (node == NULL)
         {
-            printf("Nu mai avem memorie in createBinTree!");
+            printf("We don't have memory in createBinTree!");
             exit(5);
         }
 
@@ -52,13 +52,13 @@ int nodeLeaf(Node * node)
     return nodeLeaf(node->left) + nodeLeaf(node->right);
 }
 
-int nodeParent(Node * node)
+int internNode(Node * node)
 {
     if (node == NULL)
         return 0;
 
     if (node->left != NULL || node->right != NULL)
-        return 1 + nodeParent(node->left) + nodeParent(node->right);
+        return 1 + internNode(node->left) + internNode(node->right);
 
     return 0;
 }
@@ -118,7 +118,7 @@ void testsFunctions(Node * root)
 {
     int numberOfLeaves = nodeLeaf(root);
     int heightOfTheTree = height(root);
-    int numberOfInternNodes = nodeParent(root);
+    int numberOfInternNodes = internNode(root);
 
     printf("Number of leaves : %d \n", numberOfLeaves);
     printf("Number of intern nodes : %d \n", numberOfInternNodes);
@@ -148,15 +148,13 @@ int main()
         printf("The file can not be open! \n");
         return -1;
     }
-    else
-    {
-        root = createBinaryTreeFromFile(file);
 
-        testsFunctions(root);
-        testsPrint(root);
+    root = createBinaryTreeFromFile(file);
 
-        fclose(file);
-    }
+    testsFunctions(root);
+    testsPrint(root);
+
+    fclose(file);
 
     return 0;
 }
