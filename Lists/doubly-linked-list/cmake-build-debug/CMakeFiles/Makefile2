@@ -54,19 +54,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\workflow_git\c-data-structures\Lists\doubly-linked-list
+CMAKE_SOURCE_DIR = D:\Code\git\c-data-structures\Lists\doubly-linked-list
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\workflow_git\c-data-structures\Lists\doubly-linked-list\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Code\git\c-data-structures\Lists\doubly-linked-list\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -93,14 +93,14 @@ clean: CMakeFiles/doubly_linked_list.dir/clean
 CMakeFiles/doubly_linked_list.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\doubly_linked_list.dir\build.make CMakeFiles/doubly_linked_list.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\doubly_linked_list.dir\build.make CMakeFiles/doubly_linked_list.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\workflow_git\c-data-structures\Lists\doubly-linked-list\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target doubly_linked_list"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Code\git\c-data-structures\Lists\doubly-linked-list\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target doubly_linked_list"
 .PHONY : CMakeFiles/doubly_linked_list.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/doubly_linked_list.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\workflow_git\c-data-structures\Lists\doubly-linked-list\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Lists\doubly-linked-list\cmake-build-debug\CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/doubly_linked_list.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\workflow_git\c-data-structures\Lists\doubly-linked-list\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Lists\doubly-linked-list\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/doubly_linked_list.dir/rule
 
 # Convenience name for target.
