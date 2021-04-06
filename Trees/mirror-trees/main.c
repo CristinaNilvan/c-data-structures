@@ -71,6 +71,12 @@ void testsIfTreesAreMirror(Node * firstTreeRoot, Node * secondTreeRoot)
     areMirror(firstTreeRoot, secondTreeRoot) ? printf("Yes") : printf("No");
 }
 
+void closeFiles(FILE * firstFile, FILE * secondFile)
+{
+    fclose(firstFile);
+    fclose(secondFile);
+}
+
 int main()
 {
     FILE * firstFile;
@@ -90,6 +96,8 @@ int main()
     createTrees(firstFile, secondFile, &firstTreeRoot, &secondTreeRoot);
 
     testsIfTreesAreMirror(firstTreeRoot, secondTreeRoot);
+
+    closeFiles(firstFile, secondFile);
 
     return 0;
 }

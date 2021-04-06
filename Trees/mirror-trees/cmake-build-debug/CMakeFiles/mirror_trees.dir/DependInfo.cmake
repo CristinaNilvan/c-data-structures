@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/crist/OneDrive/Desktop/Exercitii/mirror-trees/main.c" "C:/Users/crist/OneDrive/Desktop/Exercitii/mirror-trees/cmake-build-debug/CMakeFiles/mirror_trees.dir/main.c.obj"
+  "D:/Code/git/c-data-structures/Trees/mirror-trees/main.c" "D:/Code/git/c-data-structures/Trees/mirror-trees/cmake-build-debug/CMakeFiles/mirror_trees.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
