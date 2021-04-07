@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\word_operations_hash_table.dir/objects.a
+C:\PROGRA~1\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\word_operations_hash_table.dir/objects.a @CMakeFiles\word_operations_hash_table.dir\objects1.rsp
+C:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe -g   -Wl,--whole-archive CMakeFiles\word_operations_hash_table.dir/objects.a -Wl,--no-whole-archive  -o word_operations_hash_table.exe -Wl,--out-implib,libword_operations_hash_table.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\word_operations_hash_table.dir\linklibs.rsp
