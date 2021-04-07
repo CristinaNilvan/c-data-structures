@@ -5,7 +5,7 @@
 typedef struct node
 {
     int key;
-    struct node *next;
+    struct node * next;
 } Node;
 
 Node * createNode(int key)
@@ -45,33 +45,15 @@ void insertElement(Node * hTable[M], int key)
     }
 }
 
-Node * findElement(Node * hTable[M], int key)
-{
-    int position = hashFunction(key);
-
-    Node * searchedNode = hTable[position];
-
-    while (searchedNode != NULL)
-    {
-        if (searchedNode->key == key)
-            break;
-
-        searchedNode = searchedNode->next;
-    }
-
-    return searchedNode;
-}
-
-
-void getLasTwoElementsBeforeKey(int key, Node ** toDelete, Node ** previousNode)
+void getToDeleteAndHisPrevious(int key, Node ** toDelete, Node ** previousNode)
 {
     while ((*toDelete) != NULL)
     {
         if ((*toDelete)->key == key)
             break;
 
-        (*previousNode) = (*toDelete);
-        (*toDelete) = (*toDelete)->next;
+        *previousNode = *toDelete;
+        *toDelete = (*toDelete)->next;
     }
 }
 
@@ -82,7 +64,7 @@ void deleteElement(Node * hTable[M], int key)
     Node * toDelete = hTable[position];
     Node * previousNode = NULL;
 
-    getLasTwoElementsBeforeKey(key, &toDelete, &previousNode);
+    getToDeleteAndHisPrevious(key, &toDelete, &previousNode);
 
     if (toDelete == NULL)
         return;

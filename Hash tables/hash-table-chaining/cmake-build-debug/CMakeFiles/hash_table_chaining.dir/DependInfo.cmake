@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/crist/OneDrive/Desktop/Github/hash-table-chaining/main.c" "C:/Users/crist/OneDrive/Desktop/Github/hash-table-chaining/cmake-build-debug/CMakeFiles/hash_table_chaining.dir/main.c.obj"
+  "D:/Code/git/c-data-structures/Hash tables/hash-table-chaining/main.c" "D:/Code/git/c-data-structures/Hash tables/hash-table-chaining/cmake-build-debug/CMakeFiles/hash_table_chaining.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
