@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/crist/OneDrive/Desktop/Exercitii/palindrome-operations-hash-table
+# Install script for directory: D:/Code/git/c-data-structures/Hash tables/palindrome-operations-hash-table
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/crist/OneDrive/Desktop/Exercitii/palindrome-operations-hash-table/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Code/git/c-data-structures/Hash tables/palindrome-operations-hash-table/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

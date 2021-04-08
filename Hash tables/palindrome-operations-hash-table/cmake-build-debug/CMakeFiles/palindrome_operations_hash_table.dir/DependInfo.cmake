@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/crist/OneDrive/Desktop/Exercitii/palindrome-operations-hash-table/main.c" "C:/Users/crist/OneDrive/Desktop/Exercitii/palindrome-operations-hash-table/cmake-build-debug/CMakeFiles/palindrome_operations_hash_table.dir/main.c.obj"
+  "D:/Code/git/c-data-structures/Hash tables/palindrome-operations-hash-table/main.c" "D:/Code/git/c-data-structures/Hash tables/palindrome-operations-hash-table/cmake-build-debug/CMakeFiles/palindrome_operations_hash_table.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

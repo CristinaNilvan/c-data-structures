@@ -63,10 +63,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\crist\OneDrive\Desktop\Exercitii\palindrome-operations-hash-table
+CMAKE_SOURCE_DIR = "D:\Code\git\c-data-structures\Hash tables\palindrome-operations-hash-table"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\crist\OneDrive\Desktop\Exercitii\palindrome-operations-hash-table\cmake-build-debug
+CMAKE_BINARY_DIR = "D:\Code\git\c-data-structures\Hash tables\palindrome-operations-hash-table\cmake-build-debug"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -93,14 +93,14 @@ clean: CMakeFiles/palindrome_operations_hash_table.dir/clean
 CMakeFiles/palindrome_operations_hash_table.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\palindrome_operations_hash_table.dir\build.make CMakeFiles/palindrome_operations_hash_table.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\palindrome_operations_hash_table.dir\build.make CMakeFiles/palindrome_operations_hash_table.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\crist\OneDrive\Desktop\Exercitii\palindrome-operations-hash-table\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target palindrome_operations_hash_table"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Code\git\c-data-structures\Hash tables\palindrome-operations-hash-table\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target palindrome_operations_hash_table"
 .PHONY : CMakeFiles/palindrome_operations_hash_table.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/palindrome_operations_hash_table.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\crist\OneDrive\Desktop\Exercitii\palindrome-operations-hash-table\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Code\git\c-data-structures\Hash tables\palindrome-operations-hash-table\cmake-build-debug\CMakeFiles" 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/palindrome_operations_hash_table.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\crist\OneDrive\Desktop\Exercitii\palindrome-operations-hash-table\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Code\git\c-data-structures\Hash tables\palindrome-operations-hash-table\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/palindrome_operations_hash_table.dir/rule
 
 # Convenience name for target.

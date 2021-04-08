@@ -196,7 +196,7 @@ void testsHarmonicMean(Node * hTable[M])
     printf("The harmonic mean of palindromes is %f. \n\n", harmonicMean);
 }
 
-void testsDeletion(Node * hTable[M])
+void testsDeletionOfPalindromes(Node * hTable[M])
 {
     deletePalindromes(hTable);
 
@@ -212,7 +212,7 @@ int main()
 
     testsHarmonicMean(hTable);
 
-    testsDeletion(hTable);
+    testsDeletionOfPalindromes(hTable);
 
     return 0;
 }
