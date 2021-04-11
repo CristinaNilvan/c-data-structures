@@ -54,9 +54,9 @@ Node * searchKey(Node * root, int key)
         return root;
 
     if (root->key < key)
-        return searchKey(root->right, key);
+        return searchKey(root->left, key);
 
-    return searchKey(root->left, key);
+    return searchKey(root->right, key);
 }
 
 Node * findMin(Node * root)
