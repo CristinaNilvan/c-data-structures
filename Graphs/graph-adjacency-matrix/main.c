@@ -84,6 +84,17 @@ void printError()
     exit(1);
 }
 
+void allocateMemory(Graph * graph)
+{
+    for (int i = 0; i < graph->numberOfNodes ; i++)
+    {
+        graph->adjacencyMatrix[i] = calloc(graph->numberOfNodes, sizeof(int));
+
+        if (graph->adjacencyMatrix[i] == NULL)
+            printError();
+    }
+}
+
 void createGraphFromFile(FILE * file, Graph * graph)
 {
     fscanf(file, "%d", &graph->numberOfNodes );
@@ -93,13 +104,7 @@ void createGraphFromFile(FILE * file, Graph * graph)
     if (graph->adjacencyMatrix == NULL)
         printError();
 
-    for (int i = 0; i < graph->numberOfNodes ; i++)
-    {
-        graph->adjacencyMatrix[i] = calloc(graph->numberOfNodes , sizeof(int));
-
-        if (graph->adjacencyMatrix[i] == NULL)
-            printError();
-    }
+    allocateMemory(graph);
 
     int firstOfThePair, secondOfThePair;
 
