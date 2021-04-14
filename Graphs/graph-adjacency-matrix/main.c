@@ -1,13 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct {
-    int numberOfNodes ;
-    int ** adjacencyMatrix;
-} Graph;
-
-enum {NOT_VISITED, VISITED};
-
 typedef struct node
 {
     int key;
@@ -19,6 +12,13 @@ typedef struct
     Node * first;
     Node * last;
 } Queue;
+
+typedef struct {
+    int numberOfNodes ;
+    int ** adjacencyMatrix;
+} Graph;
+
+enum {NOT_VISITED, VISITED};
 
 Node * createNode(int key)
 {
