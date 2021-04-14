@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/crist/OneDrive/Desktop/Github/graph-dynamic-adjacency-lists
+# Install script for directory: D:/Code/git/c-data-structures/Graphs/graph-dynamic-adjacency-lists
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/crist/OneDrive/Desktop/Github/graph-dynamic-adjacency-lists/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Code/git/c-data-structures/Graphs/graph-dynamic-adjacency-lists/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

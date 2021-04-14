@@ -9,17 +9,17 @@ typedef struct nodeType
 
 typedef struct
 {
+    Node * first;
+    Node * last;
+} Queue;
+
+typedef struct
+{
     int numberOfNodes;
     Node ** adjacencyLists;
 } Graph;
 
 enum { NOT_VISITED, VISITED };
-
-typedef struct
-{
-    Node * first;
-    Node * last;
-} Queue;
 
 Node * createNode(int key)
 {
