@@ -93,12 +93,12 @@ clean: CMakeFiles/graph_adjacency_matrix.dir/clean
 CMakeFiles/graph_adjacency_matrix.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_adjacency_matrix.dir\build.make CMakeFiles/graph_adjacency_matrix.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\graph_adjacency_matrix.dir\build.make CMakeFiles/graph_adjacency_matrix.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Code\git\c-data-structures\Graphs\graph-adjacency-matrix\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target graph_adjacency_matrix"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Code\git\c-data-structures\Graphs\graph-adjacency-matrix\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target graph_adjacency_matrix"
 .PHONY : CMakeFiles/graph_adjacency_matrix.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/graph_adjacency_matrix.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Graphs\graph-adjacency-matrix\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Graphs\graph-adjacency-matrix\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/graph_adjacency_matrix.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Graphs\graph-adjacency-matrix\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/graph_adjacency_matrix.dir/rule

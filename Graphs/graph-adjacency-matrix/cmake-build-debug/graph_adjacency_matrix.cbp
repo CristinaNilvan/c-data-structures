@@ -77,6 +77,12 @@
 		<Unit filename="D:/Code/git/c-data-structures/Graphs/graph-adjacency-matrix/main.c">
 			<Option target="graph_adjacency_matrix"/>
 		</Unit>
+		<Unit filename="D:/Code/git/c-data-structures/Graphs/graph-adjacency-matrix/queue.c">
+			<Option target="graph_adjacency_matrix"/>
+		</Unit>
+		<Unit filename="D:/Code/git/c-data-structures/Graphs/graph-adjacency-matrix/queue.h">
+			<Option target="graph_adjacency_matrix"/>
+		</Unit>
 		<Unit filename="D:/Code/git/c-data-structures/Graphs/graph-adjacency-matrix/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

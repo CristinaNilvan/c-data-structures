@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/graph_adjacency_matrix.dir/main.c.obj"
+  "CMakeFiles/graph_adjacency_matrix.dir/queue.c.obj"
   "graph_adjacency_matrix.exe"
   "graph_adjacency_matrix.exe.manifest"
   "graph_adjacency_matrix.pdb"
