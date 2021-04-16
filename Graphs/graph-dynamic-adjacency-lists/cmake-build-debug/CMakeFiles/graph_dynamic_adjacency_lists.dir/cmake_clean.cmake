@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/graph_dynamic_adjacency_lists.dir/main.c.obj"
+  "CMakeFiles/graph_dynamic_adjacency_lists.dir/queue.c.obj"
   "graph_dynamic_adjacency_lists.exe"
   "graph_dynamic_adjacency_lists.exe.manifest"
   "graph_dynamic_adjacency_lists.pdb"

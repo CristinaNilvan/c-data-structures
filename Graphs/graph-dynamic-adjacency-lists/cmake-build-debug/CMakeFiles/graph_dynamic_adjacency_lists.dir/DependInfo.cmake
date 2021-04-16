@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "D:/Code/git/c-data-structures/Graphs/graph-dynamic-adjacency-lists/main.c" "D:/Code/git/c-data-structures/Graphs/graph-dynamic-adjacency-lists/cmake-build-debug/CMakeFiles/graph_dynamic_adjacency_lists.dir/main.c.obj"
+  "D:/Code/git/c-data-structures/Graphs/graph-dynamic-adjacency-lists/queue.c" "D:/Code/git/c-data-structures/Graphs/graph-dynamic-adjacency-lists/cmake-build-debug/CMakeFiles/graph_dynamic_adjacency_lists.dir/queue.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

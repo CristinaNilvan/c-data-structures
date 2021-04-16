@@ -77,6 +77,12 @@
 		<Unit filename="D:/Code/git/c-data-structures/Graphs/graph-dynamic-adjacency-lists/main.c">
 			<Option target="graph_dynamic_adjacency_lists"/>
 		</Unit>
+		<Unit filename="D:/Code/git/c-data-structures/Graphs/graph-dynamic-adjacency-lists/queue.c">
+			<Option target="graph_dynamic_adjacency_lists"/>
+		</Unit>
+		<Unit filename="D:/Code/git/c-data-structures/Graphs/graph-dynamic-adjacency-lists/queue.h">
+			<Option target="graph_dynamic_adjacency_lists"/>
+		</Unit>
 		<Unit filename="D:/Code/git/c-data-structures/Graphs/graph-dynamic-adjacency-lists/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
