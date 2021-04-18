@@ -142,6 +142,33 @@ linked_list/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\linked_list.dir\build.make CMakeFiles/linked_list.dir/build
 .PHONY : linked_list/fast
 
+linked_list.obj: linked_list.c.obj
+
+.PHONY : linked_list.obj
+
+# target to build an object file
+linked_list.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\linked_list.dir\build.make CMakeFiles/linked_list.dir/linked_list.c.obj
+.PHONY : linked_list.c.obj
+
+linked_list.i: linked_list.c.i
+
+.PHONY : linked_list.i
+
+# target to preprocess a source file
+linked_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\linked_list.dir\build.make CMakeFiles/linked_list.dir/linked_list.c.i
+.PHONY : linked_list.c.i
+
+linked_list.s: linked_list.c.s
+
+.PHONY : linked_list.s
+
+# target to generate assembly for a file
+linked_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\linked_list.dir\build.make CMakeFiles/linked_list.dir/linked_list.c.s
+.PHONY : linked_list.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -178,6 +205,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... linked_list
+	@echo ... linked_list.obj
+	@echo ... linked_list.i
+	@echo ... linked_list.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

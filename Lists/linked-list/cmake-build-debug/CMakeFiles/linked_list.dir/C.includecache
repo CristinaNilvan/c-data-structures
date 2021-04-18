@@ -6,9 +6,19 @@
 
 #IncludeRegexTransform: 
 
-D:/Code/git/c-data-structures/Lists/linked-list/main.c
+D:/Code/git/c-data-structures/Lists/linked-list/linked_list.c
 stdio.h
 -
 stdlib.h
 -
+linked_list.h
+D:/Code/git/c-data-structures/Lists/linked-list/linked_list.h
+
+D:/Code/git/c-data-structures/Lists/linked-list/linked_list.h
+
+D:/Code/git/c-data-structures/Lists/linked-list/main.c
+stdio.h
+-
+linked_list.h
+D:/Code/git/c-data-structures/Lists/linked-list/linked_list.h
 

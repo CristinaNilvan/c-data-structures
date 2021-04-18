@@ -74,6 +74,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Code/git/c-data-structures/Lists/linked-list/linked_list.c">
+			<Option target="linked_list"/>
+		</Unit>
+		<Unit filename="D:/Code/git/c-data-structures/Lists/linked-list/linked_list.h">
+			<Option target="linked_list"/>
+		</Unit>
 		<Unit filename="D:/Code/git/c-data-structures/Lists/linked-list/main.c">
 			<Option target="linked_list"/>
 		</Unit>
