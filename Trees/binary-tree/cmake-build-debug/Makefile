@@ -142,6 +142,33 @@ binary_tree/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\binary_tree.dir\build.make CMakeFiles/binary_tree.dir/build
 .PHONY : binary_tree/fast
 
+binary_tree.obj: binary_tree.c.obj
+
+.PHONY : binary_tree.obj
+
+# target to build an object file
+binary_tree.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binary_tree.dir\build.make CMakeFiles/binary_tree.dir/binary_tree.c.obj
+.PHONY : binary_tree.c.obj
+
+binary_tree.i: binary_tree.c.i
+
+.PHONY : binary_tree.i
+
+# target to preprocess a source file
+binary_tree.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binary_tree.dir\build.make CMakeFiles/binary_tree.dir/binary_tree.c.i
+.PHONY : binary_tree.c.i
+
+binary_tree.s: binary_tree.c.s
+
+.PHONY : binary_tree.s
+
+# target to generate assembly for a file
+binary_tree.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binary_tree.dir\build.make CMakeFiles/binary_tree.dir/binary_tree.c.s
+.PHONY : binary_tree.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -178,6 +205,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... binary_tree
+	@echo ... binary_tree.obj
+	@echo ... binary_tree.i
+	@echo ... binary_tree.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

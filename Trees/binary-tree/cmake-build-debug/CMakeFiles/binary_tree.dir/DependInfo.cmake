@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "D:/Code/git/c-data-structures/Trees/binary-tree/binary_tree.c" "D:/Code/git/c-data-structures/Trees/binary-tree/cmake-build-debug/CMakeFiles/binary_tree.dir/binary_tree.c.obj"
   "D:/Code/git/c-data-structures/Trees/binary-tree/main.c" "D:/Code/git/c-data-structures/Trees/binary-tree/cmake-build-debug/CMakeFiles/binary_tree.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

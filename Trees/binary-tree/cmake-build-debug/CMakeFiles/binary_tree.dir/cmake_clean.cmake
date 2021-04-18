@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/binary_tree.dir/binary_tree.c.obj"
   "CMakeFiles/binary_tree.dir/main.c.obj"
   "binary_tree.exe"
   "binary_tree.exe.manifest"

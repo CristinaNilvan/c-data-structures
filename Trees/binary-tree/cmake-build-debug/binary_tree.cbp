@@ -74,6 +74,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Code/git/c-data-structures/Trees/binary-tree/binary_tree.c">
+			<Option target="binary_tree"/>
+		</Unit>
+		<Unit filename="D:/Code/git/c-data-structures/Trees/binary-tree/binary_tree.h">
+			<Option target="binary_tree"/>
+		</Unit>
 		<Unit filename="D:/Code/git/c-data-structures/Trees/binary-tree/main.c">
 			<Option target="binary_tree"/>
 		</Unit>
