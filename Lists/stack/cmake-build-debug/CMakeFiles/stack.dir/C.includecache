@@ -6,9 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/crist/OneDrive/Desktop/Github/stack/main.c
+D:/Code/git/c-data-structures/Lists/stack/main.c
+stack.h
+D:/Code/git/c-data-structures/Lists/stack/stack.h
+
+D:/Code/git/c-data-structures/Lists/stack/stack.c
 stdio.h
 -
 stdlib.h
 -
+stack.h
+D:/Code/git/c-data-structures/Lists/stack/stack.h
+
+D:/Code/git/c-data-structures/Lists/stack/stack.h
 

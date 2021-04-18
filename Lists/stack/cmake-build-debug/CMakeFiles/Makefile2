@@ -63,10 +63,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\crist\OneDrive\Desktop\Github\stack
+CMAKE_SOURCE_DIR = D:\Code\git\c-data-structures\Lists\stack
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\crist\OneDrive\Desktop\Github\stack\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Code\git\c-data-structures\Lists\stack\cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -93,14 +93,14 @@ clean: CMakeFiles/stack.dir/clean
 CMakeFiles/stack.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\stack.dir\build.make CMakeFiles/stack.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\stack.dir\build.make CMakeFiles/stack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\crist\OneDrive\Desktop\Github\stack\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target stack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Code\git\c-data-structures\Lists\stack\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target stack"
 .PHONY : CMakeFiles/stack.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/stack.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\crist\OneDrive\Desktop\Github\stack\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Lists\stack\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/stack.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\crist\OneDrive\Desktop\Github\stack\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Lists\stack\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/stack.dir/rule
 
 # Convenience name for target.
