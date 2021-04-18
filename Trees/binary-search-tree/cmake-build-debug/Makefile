@@ -142,6 +142,33 @@ binary_search_tree/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\binary_search_tree.dir\build.make CMakeFiles/binary_search_tree.dir/build
 .PHONY : binary_search_tree/fast
 
+binary_search_tree.obj: binary_search_tree.c.obj
+
+.PHONY : binary_search_tree.obj
+
+# target to build an object file
+binary_search_tree.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binary_search_tree.dir\build.make CMakeFiles/binary_search_tree.dir/binary_search_tree.c.obj
+.PHONY : binary_search_tree.c.obj
+
+binary_search_tree.i: binary_search_tree.c.i
+
+.PHONY : binary_search_tree.i
+
+# target to preprocess a source file
+binary_search_tree.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binary_search_tree.dir\build.make CMakeFiles/binary_search_tree.dir/binary_search_tree.c.i
+.PHONY : binary_search_tree.c.i
+
+binary_search_tree.s: binary_search_tree.c.s
+
+.PHONY : binary_search_tree.s
+
+# target to generate assembly for a file
+binary_search_tree.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\binary_search_tree.dir\build.make CMakeFiles/binary_search_tree.dir/binary_search_tree.c.s
+.PHONY : binary_search_tree.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -178,6 +205,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... binary_search_tree
+	@echo ... binary_search_tree.obj
+	@echo ... binary_search_tree.i
+	@echo ... binary_search_tree.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
