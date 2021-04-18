@@ -67,10 +67,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\crist\OneDrive\Desktop\Github\queue
+CMAKE_SOURCE_DIR = D:\Code\git\c-data-structures\Lists\queue
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\crist\OneDrive\Desktop\Github\queue\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Code\git\c-data-structures\Lists\queue\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\crist\OneDrive\Desktop\Github\queue\cmake-build-debug\CMakeFiles C:\Users\crist\OneDrive\Desktop\Github\queue\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Lists\queue\cmake-build-debug\CMakeFiles D:\Code\git\c-data-structures\Lists\queue\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\crist\OneDrive\Desktop\Github\queue\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Lists\queue\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -169,6 +169,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\queue.dir\build.make CMakeFiles/queue.dir/main.c.s
 .PHONY : main.c.s
 
+queue.obj: queue.c.obj
+
+.PHONY : queue.obj
+
+# target to build an object file
+queue.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\queue.dir\build.make CMakeFiles/queue.dir/queue.c.obj
+.PHONY : queue.c.obj
+
+queue.i: queue.c.i
+
+.PHONY : queue.i
+
+# target to preprocess a source file
+queue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\queue.dir\build.make CMakeFiles/queue.dir/queue.c.i
+.PHONY : queue.c.i
+
+queue.s: queue.c.s
+
+.PHONY : queue.s
+
+# target to generate assembly for a file
+queue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\queue.dir\build.make CMakeFiles/queue.dir/queue.c.s
+.PHONY : queue.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -181,6 +208,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... queue.obj
+	@echo ... queue.i
+	@echo ... queue.s
 .PHONY : help
 
 
