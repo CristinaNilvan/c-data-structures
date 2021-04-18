@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "D:/Code/git/c-data-structures/Lists/doubly-linked-list/doubly_linked_list.c" "D:/Code/git/c-data-structures/Lists/doubly-linked-list/cmake-build-debug/CMakeFiles/doubly_linked_list.dir/doubly_linked_list.c.obj"
   "D:/Code/git/c-data-structures/Lists/doubly-linked-list/main.c" "D:/Code/git/c-data-structures/Lists/doubly-linked-list/cmake-build-debug/CMakeFiles/doubly_linked_list.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

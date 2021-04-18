@@ -93,12 +93,12 @@ clean: CMakeFiles/doubly_linked_list.dir/clean
 CMakeFiles/doubly_linked_list.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\doubly_linked_list.dir\build.make CMakeFiles/doubly_linked_list.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\doubly_linked_list.dir\build.make CMakeFiles/doubly_linked_list.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Code\git\c-data-structures\Lists\doubly-linked-list\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target doubly_linked_list"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Code\git\c-data-structures\Lists\doubly-linked-list\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target doubly_linked_list"
 .PHONY : CMakeFiles/doubly_linked_list.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/doubly_linked_list.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Lists\doubly-linked-list\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Lists\doubly-linked-list\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/doubly_linked_list.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Lists\doubly-linked-list\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/doubly_linked_list.dir/rule

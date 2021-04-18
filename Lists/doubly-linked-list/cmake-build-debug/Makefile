@@ -142,6 +142,33 @@ doubly_linked_list/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\doubly_linked_list.dir\build.make CMakeFiles/doubly_linked_list.dir/build
 .PHONY : doubly_linked_list/fast
 
+doubly_linked_list.obj: doubly_linked_list.c.obj
+
+.PHONY : doubly_linked_list.obj
+
+# target to build an object file
+doubly_linked_list.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\doubly_linked_list.dir\build.make CMakeFiles/doubly_linked_list.dir/doubly_linked_list.c.obj
+.PHONY : doubly_linked_list.c.obj
+
+doubly_linked_list.i: doubly_linked_list.c.i
+
+.PHONY : doubly_linked_list.i
+
+# target to preprocess a source file
+doubly_linked_list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\doubly_linked_list.dir\build.make CMakeFiles/doubly_linked_list.dir/doubly_linked_list.c.i
+.PHONY : doubly_linked_list.c.i
+
+doubly_linked_list.s: doubly_linked_list.c.s
+
+.PHONY : doubly_linked_list.s
+
+# target to generate assembly for a file
+doubly_linked_list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\doubly_linked_list.dir\build.make CMakeFiles/doubly_linked_list.dir/doubly_linked_list.c.s
+.PHONY : doubly_linked_list.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -178,6 +205,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... doubly_linked_list
+	@echo ... doubly_linked_list.obj
+	@echo ... doubly_linked_list.i
+	@echo ... doubly_linked_list.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

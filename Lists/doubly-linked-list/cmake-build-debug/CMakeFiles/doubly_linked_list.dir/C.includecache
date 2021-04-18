@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
+D:/Code/git/c-data-structures/Lists/doubly-linked-list/doubly_linked_list.h
+
 D:/Code/git/c-data-structures/Lists/doubly-linked-list/main.c
 stdio.h
 -
-stdlib.h
--
+doubly_linked_list.h
+D:/Code/git/c-data-structures/Lists/doubly-linked-list/doubly_linked_list.h
 
