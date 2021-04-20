@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/hash_table_chaining.dir/hash_table.c.obj"
   "CMakeFiles/hash_table_chaining.dir/main.c.obj"
   "hash_table_chaining.exe"
   "hash_table_chaining.exe.manifest"

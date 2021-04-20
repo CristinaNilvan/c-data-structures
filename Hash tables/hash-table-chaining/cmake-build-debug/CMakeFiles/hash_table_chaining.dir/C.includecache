@@ -6,9 +6,17 @@
 
 #IncludeRegexTransform: 
 
-D:/Code/git/c-data-structures/Hash tables/hash-table-chaining/main.c
+D:/Code/git/c-data-structures/Hash tables/hash-table-chaining/hash_table.c
 stdio.h
 -
 stdlib.h
 -
+hash_table.h
+D:/Code/git/c-data-structures/Hash tables/hash-table-chaining/hash_table.h
+
+D:/Code/git/c-data-structures/Hash tables/hash-table-chaining/hash_table.h
+
+D:/Code/git/c-data-structures/Hash tables/hash-table-chaining/main.c
+hash_table.h
+D:/Code/git/c-data-structures/Hash tables/hash-table-chaining/hash_table.h
 

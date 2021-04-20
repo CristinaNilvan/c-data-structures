@@ -74,6 +74,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Code/git/c-data-structures/Hash tables/hash-table-chaining/hash_table.c">
+			<Option target="hash_table_chaining"/>
+		</Unit>
+		<Unit filename="D:/Code/git/c-data-structures/Hash tables/hash-table-chaining/hash_table.h">
+			<Option target="hash_table_chaining"/>
+		</Unit>
 		<Unit filename="D:/Code/git/c-data-structures/Hash tables/hash-table-chaining/main.c">
 			<Option target="hash_table_chaining"/>
 		</Unit>

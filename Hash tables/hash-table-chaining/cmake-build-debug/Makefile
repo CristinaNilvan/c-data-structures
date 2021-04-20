@@ -142,6 +142,33 @@ hash_table_chaining/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hash_table_chaining.dir\build.make CMakeFiles/hash_table_chaining.dir/build
 .PHONY : hash_table_chaining/fast
 
+hash_table.obj: hash_table.c.obj
+
+.PHONY : hash_table.obj
+
+# target to build an object file
+hash_table.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hash_table_chaining.dir\build.make CMakeFiles/hash_table_chaining.dir/hash_table.c.obj
+.PHONY : hash_table.c.obj
+
+hash_table.i: hash_table.c.i
+
+.PHONY : hash_table.i
+
+# target to preprocess a source file
+hash_table.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hash_table_chaining.dir\build.make CMakeFiles/hash_table_chaining.dir/hash_table.c.i
+.PHONY : hash_table.c.i
+
+hash_table.s: hash_table.c.s
+
+.PHONY : hash_table.s
+
+# target to generate assembly for a file
+hash_table.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\hash_table_chaining.dir\build.make CMakeFiles/hash_table_chaining.dir/hash_table.c.s
+.PHONY : hash_table.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -178,6 +205,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... hash_table_chaining
+	@echo ... hash_table.obj
+	@echo ... hash_table.i
+	@echo ... hash_table.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
