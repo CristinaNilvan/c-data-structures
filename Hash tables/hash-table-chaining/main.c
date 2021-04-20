@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define M 7
+#define TABLE_SIZE 7
 
 typedef struct node
 {
@@ -17,10 +17,10 @@ Node * createNode(int key)
     return node;
 }
 
-void initializeTable(Node ** hTable)
+void initializeTable(Node ** hashTable)
 {
-    for(int i = 0; i < M; i++)
-        hTable[i] = NULL;
+    for(int i = 0; i < TABLE_SIZE; i++)
+        hashTable[i] = NULL;
 }
 
 int hashFunction(int key)
@@ -28,20 +28,20 @@ int hashFunction(int key)
     if (key < 0)
         key = -key;
 
-    return key % M;
+    return key % TABLE_SIZE;
 }
 
-void insertElement(Node * hTable[M], int key)
+void insertElement(Node * hashTable[TABLE_SIZE], int key)
 {
     int position = hashFunction(key);
 
-    if (hTable[position] == NULL)
-        hTable[position] = createNode(key);
+    if (hashTable[position] == NULL)
+        hashTable[position] = createNode(key);
     else
     {
         Node * node = createNode(key);
-        node->next = hTable[position];
-        hTable[position] = node;
+        node->next = hashTable[position];
+        hashTable[position] = node;
     }
 }
 
@@ -57,11 +57,11 @@ void getToDeleteAndHisPrevious(int key, Node ** toDelete, Node ** previousNode)
     }
 }
 
-void deleteElement(Node * hTable[M], int key)
+void deleteElement(Node * hashTable[TABLE_SIZE], int key)
 {
     int position = hashFunction(key);
 
-    Node * toDelete = hTable[position];
+    Node * toDelete = hashTable[position];
     Node * previousNode = NULL;
 
     getToDeleteAndHisPrevious(key, &toDelete, &previousNode);
@@ -69,9 +69,9 @@ void deleteElement(Node * hTable[M], int key)
     if (toDelete == NULL)
         return;
 
-    if (toDelete == hTable[position])
+    if (toDelete == hashTable[position])
     {
-        hTable[position] = hTable[position]->next;
+        hashTable[position] = hashTable[position]->next;
 
         free(toDelete);
     }
@@ -83,16 +83,16 @@ void deleteElement(Node * hTable[M], int key)
     }
 }
 
-void showAll(Node * hTable[M])
+void showAll(Node * hashTable[TABLE_SIZE])
 {
-    for(int position = 0; position < M; position++)
+    for(int position = 0; position < TABLE_SIZE; position++)
     {
         printf(" %d :", position);
 
-        if(hTable[position] != NULL)
+        if(hashTable[position] != NULL)
         {
             Node * node;
-            node = hTable[position];
+            node = hashTable[position];
             while (node != NULL)
             {
                 printf(" %d ", node->key);
@@ -104,33 +104,33 @@ void showAll(Node * hTable[M])
     printf("\n");
 }
 
-void testsInsertion(Node ** hTable)
+void testsInsertion(Node ** hashTable)
 {
     int values[] = {36, 18, 6, 43, 72, 10, 5, 15};
 
     for(int i = 0; i < sizeof(values) / sizeof(int); i++)
-        insertElement(hTable, values[i]);
+        insertElement(hashTable, values[i]);
 
-    showAll(hTable);
+    showAll(hashTable);
 }
 
-void testsDeletion(Node ** hTable)
+void testsDeletion(Node ** hashTable)
 {
     int toDeleteValues[] = {43, 36, 10, 61, -5};
 
     for(int i = 0; i < sizeof(toDeleteValues) / sizeof(int); i++)
-        deleteElement(hTable, toDeleteValues[i]);
+        deleteElement(hashTable, toDeleteValues[i]);
 
-    showAll(hTable);
+    showAll(hashTable);
 }
 
 int main()
 {
-    Node * hTable[M];
-    initializeTable(hTable);
+    Node * hashTable[TABLE_SIZE];
+    initializeTable(hashTable);
 
-    testsInsertion(hTable);
-    testsDeletion(hTable);
+    testsInsertion(hashTable);
+    testsDeletion(hashTable);
 
     return 0;
 }
