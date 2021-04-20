@@ -93,12 +93,12 @@ clean: CMakeFiles/hash_table_open_addressing.dir/clean
 CMakeFiles/hash_table_open_addressing.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hash_table_open_addressing.dir\build.make CMakeFiles/hash_table_open_addressing.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\hash_table_open_addressing.dir\build.make CMakeFiles/hash_table_open_addressing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Code\git\c-data-structures\Hash tables\hash-table-open-addressing\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target hash_table_open_addressing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="D:\Code\git\c-data-structures\Hash tables\hash-table-open-addressing\cmake-build-debug\CMakeFiles" --progress-num=1,2,3 "Built target hash_table_open_addressing"
 .PHONY : CMakeFiles/hash_table_open_addressing.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/hash_table_open_addressing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Code\git\c-data-structures\Hash tables\hash-table-open-addressing\cmake-build-debug\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Code\git\c-data-structures\Hash tables\hash-table-open-addressing\cmake-build-debug\CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/hash_table_open_addressing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Code\git\c-data-structures\Hash tables\hash-table-open-addressing\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/hash_table_open_addressing.dir/rule

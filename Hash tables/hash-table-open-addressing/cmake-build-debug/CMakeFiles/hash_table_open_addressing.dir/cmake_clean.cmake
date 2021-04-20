@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/hash_table_open_addressing.dir/hash_table.c.obj"
   "CMakeFiles/hash_table_open_addressing.dir/main.c.obj"
   "hash_table_open_addressing.exe"
   "hash_table_open_addressing.exe.manifest"

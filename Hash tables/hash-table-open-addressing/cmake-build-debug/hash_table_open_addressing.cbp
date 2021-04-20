@@ -74,6 +74,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Code/git/c-data-structures/Hash tables/hash-table-open-addressing/hash_table.c">
+			<Option target="hash_table_open_addressing"/>
+		</Unit>
+		<Unit filename="D:/Code/git/c-data-structures/Hash tables/hash-table-open-addressing/hash_table.h">
+			<Option target="hash_table_open_addressing"/>
+		</Unit>
 		<Unit filename="D:/Code/git/c-data-structures/Hash tables/hash-table-open-addressing/main.c">
 			<Option target="hash_table_open_addressing"/>
 		</Unit>
