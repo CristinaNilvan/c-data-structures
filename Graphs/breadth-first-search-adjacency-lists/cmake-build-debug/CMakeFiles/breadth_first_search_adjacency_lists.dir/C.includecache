@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/crist/OneDrive/Desktop/Github/breadth-first-search-adjacency-lists/main.c
+stdio.h
+-
+stdlib.h
+-
+queue.h
+C:/Users/crist/OneDrive/Desktop/Github/breadth-first-search-adjacency-lists/queue.h
+
+C:/Users/crist/OneDrive/Desktop/Github/breadth-first-search-adjacency-lists/queue.c
+stdlib.h
+-
+queue.h
+C:/Users/crist/OneDrive/Desktop/Github/breadth-first-search-adjacency-lists/queue.h
+
+C:/Users/crist/OneDrive/Desktop/Github/breadth-first-search-adjacency-lists/queue.h
+
