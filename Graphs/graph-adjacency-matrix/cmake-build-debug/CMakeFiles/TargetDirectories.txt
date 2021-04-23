@@ -1,3 +1,0 @@
-D:/Code/git/c-data-structures/Graphs/graph-adjacency-matrix/cmake-build-debug/CMakeFiles/graph_adjacency_matrix.dir
-D:/Code/git/c-data-structures/Graphs/graph-adjacency-matrix/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Code/git/c-data-structures/Graphs/graph-adjacency-matrix/cmake-build-debug/CMakeFiles/rebuild_cache.dir
