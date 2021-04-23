@@ -1,3 +1,0 @@
-D:/Code/git/c-data-structures/Graphs/graph-dynamic-adjacency-lists/cmake-build-debug/CMakeFiles/graph_dynamic_adjacency_lists.dir
-D:/Code/git/c-data-structures/Graphs/graph-dynamic-adjacency-lists/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Code/git/c-data-structures/Graphs/graph-dynamic-adjacency-lists/cmake-build-debug/CMakeFiles/rebuild_cache.dir
