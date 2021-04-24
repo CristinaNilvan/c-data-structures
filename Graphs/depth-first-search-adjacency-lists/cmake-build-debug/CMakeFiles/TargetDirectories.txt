@@ -1,3 +1,3 @@
-C:/Users/crist/OneDrive/Desktop/Github/depth-first-search-adjacency-lists/cmake-build-debug/CMakeFiles/depth_first_search_adjacency_lists.dir
-C:/Users/crist/OneDrive/Desktop/Github/depth-first-search-adjacency-lists/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/crist/OneDrive/Desktop/Github/depth-first-search-adjacency-lists/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Code/git/c-data-structures/Graphs/depth-first-search-adjacency-lists/cmake-build-debug/CMakeFiles/depth_first_search_adjacency_lists.dir
+D:/Code/git/c-data-structures/Graphs/depth-first-search-adjacency-lists/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Code/git/c-data-structures/Graphs/depth-first-search-adjacency-lists/cmake-build-debug/CMakeFiles/rebuild_cache.dir

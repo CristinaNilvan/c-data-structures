@@ -153,6 +153,29 @@ void testsDepthFirstSearch(Graph * graph)
     printVector((*graph).completionTime, (*graph).numberOfNodes);
 }
 
+void freeAdjacencyLists(Graph * graph)
+{
+    for (int i = 0; i < (*graph).numberOfNodes; i++)
+        while ((*graph).adjacencyLists[i] != NULL)
+        {
+            Node * toBeFreed = (*graph).adjacencyLists[i];
+            (*graph).adjacencyLists[i] = (*graph).adjacencyLists[i]->next;
+
+            free(toBeFreed);
+        }
+
+    free((*graph).adjacencyLists);
+}
+
+void freeMemory(Graph * graph)
+{
+    free((*graph).parentNodes);
+    free((*graph).discoverTime);
+    free((*graph).completionTime);
+    free((*graph).colorOfNodes);
+    freeAdjacencyLists(graph);
+}
+
 int main()
 {
     FILE * file = validateFile("Graph.txt");
@@ -167,6 +190,8 @@ int main()
     createGraphFromFile(file, &graph);
 
     testsDepthFirstSearch(&graph);
+
+    freeMemory(&graph);
 
     fclose(file);
 
