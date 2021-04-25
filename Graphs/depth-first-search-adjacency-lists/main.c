@@ -14,8 +14,6 @@ typedef struct
 
 enum {WHITE, GRAY, BLACK};
 
-Node *traverseNeighbours(const Graph *graph, Node **stack, int visitedNode, Node *currentNode);
-
 FILE * validateFile(const char * fileName)
 {
     FILE * file = fopen(fileName, "r");
@@ -114,7 +112,7 @@ void depthFirstSearchRecursive(Graph * graph, int visitedNode, int * time)
     graph->completionTime[visitedNode] = *time;
 }
 
-Node * traverseNeighbours(const Graph * graph, Node ** stack, int visitedNode, Node * currentNode)
+Node * traverseNeighbours(Graph * graph, Node ** stack, int visitedNode, Node * currentNode)
 {
     while (currentNode != NULL)
     {
