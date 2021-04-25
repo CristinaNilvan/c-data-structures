@@ -101,7 +101,7 @@ void createGraphFromFile(FILE * file, Graph * graph)
     }
 }
 
-void depthFirstSearchVisit(Graph * graph, int visitedNode, int * time)
+void depthFirstSearchRecursive(Graph * graph, int visitedNode, int * time)
 {
     *time += 1;
     graph->discoverTime[visitedNode] = *time;
@@ -116,7 +116,7 @@ void depthFirstSearchVisit(Graph * graph, int visitedNode, int * time)
         if (graph->colorOfNodes[nodeToVisit] == WHITE)
         {
             graph->parentNodes[nodeToVisit] = visitedNode;
-            depthFirstSearchVisit(graph, nodeToVisit, time);
+            depthFirstSearchRecursive(graph, nodeToVisit, time);
         }
 
         currentNodeInList = currentNodeInList->next;
@@ -125,15 +125,6 @@ void depthFirstSearchVisit(Graph * graph, int visitedNode, int * time)
     graph->colorOfNodes[visitedNode] = BLACK;
     *time = *time + 1;
     graph->completionTime[visitedNode] = *time;
-}
-
-void depthFirstSearchRecursive(Graph * graph)
-{
-    int time = 0;
-
-    for (int i = 0; i < graph->numberOfNodes; i++)
-        if (graph->colorOfNodes[i] == WHITE)
-            depthFirstSearchVisit(graph, i, &time);
 }
 
 void printVector(int * vector, int number)
@@ -146,7 +137,13 @@ void printVector(int * vector, int number)
 
 void testsDepthFirstSearch(Graph * graph)
 {
-    depthFirstSearchRecursive(graph);
+    int time = 0;
+
+    int startNode;
+    printf("Start node :");
+    scanf("%d", &startNode);
+
+    depthFirstSearchRecursive(graph, startNode, &time);
 
     printVector((*graph).parentNodes, (*graph).numberOfNodes);
     printVector((*graph).discoverTime, (*graph).numberOfNodes);
