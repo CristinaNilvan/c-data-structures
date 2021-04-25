@@ -14,6 +14,8 @@ typedef struct
 
 enum {WHITE, GRAY, BLACK};
 
+Node *traverseNeighbours(const Graph *graph, Node **stack, int visitedNode, Node *currentNode);
+
 FILE * validateFile(const char * fileName)
 {
     FILE * file = fopen(fileName, "r");
@@ -112,6 +114,57 @@ void depthFirstSearchRecursive(Graph * graph, int visitedNode, int * time)
     graph->completionTime[visitedNode] = *time;
 }
 
+Node * traverseNeighbours(const Graph * graph, Node ** stack, int visitedNode, Node * currentNode)
+{
+    while (currentNode != NULL)
+    {
+        int nodeToVisit = currentNode->key;
+
+        if (graph->colorOfNodes[nodeToVisit] == WHITE)
+        {
+            push(stack, nodeToVisit);
+            graph->parentNodes[nodeToVisit] = visitedNode;
+        }
+
+        currentNode = currentNode->next;
+    }
+    return (*stack);
+}
+
+void depthFirstSearchIterative(Graph * graph, int startNode)
+{
+    Node * stack;
+
+    initializeStack(&stack);
+    push(&stack, startNode);
+
+    while (!empty(stack))
+    {
+        int visitedNode = pop(&stack);
+
+        if (graph->colorOfNodes[visitedNode] == WHITE)
+        {
+            graph->colorOfNodes[visitedNode] = GRAY;
+            printf("%d ", visitedNode);
+
+            Node * currentNode = graph->adjacencyLists[visitedNode];
+
+            stack = traverseNeighbours(graph, &stack, visitedNode, currentNode);
+        }
+    }
+}
+
+void reinitializeGraph(Graph * graph)
+{
+    for (int i = 0; i < graph->numberOfNodes; i++)
+    {
+        graph->parentNodes[i] = -1;
+        graph->discoverTime[i] = -1;
+        graph->completionTime[i] = -1;
+        graph->colorOfNodes[i] = WHITE;
+    }
+}
+
 void printVector(int * vector, int number)
 {
     for (int i = 0; i < number; i++)
@@ -120,8 +173,10 @@ void printVector(int * vector, int number)
     printf("\n");
 }
 
-void testsDepthFirstSearch(Graph * graph)
+void testsDepthFirstSearchRecursive(Graph * graph)
 {
+    printf("Depth First Search Recursive\n");
+
     int time = 0;
 
     int startNode;
@@ -133,6 +188,20 @@ void testsDepthFirstSearch(Graph * graph)
     printVector((*graph).parentNodes, (*graph).numberOfNodes);
     printVector((*graph).discoverTime, (*graph).numberOfNodes);
     printVector((*graph).completionTime, (*graph).numberOfNodes);
+}
+
+void testsDepthFirstSearchIterative(Graph * graph)
+{
+    printf("Depth First Search Iterative\n");
+
+    int startNode;
+    printf("Start node : ");
+    scanf("%d", &startNode);
+
+    depthFirstSearchIterative(graph, startNode);
+    printf("\n");
+
+    printVector((*graph).parentNodes, (*graph).numberOfNodes);
 }
 
 void freeAdjacencyLists(Graph * graph)
@@ -171,7 +240,9 @@ int main()
     Graph graph;
     createGraphFromFile(file, &graph);
 
-    testsDepthFirstSearch(&graph);
+    testsDepthFirstSearchRecursive(&graph);
+    reinitializeGraph(&graph);
+    testsDepthFirstSearchIterative(&graph);
 
     freeMemory(&graph);
 
