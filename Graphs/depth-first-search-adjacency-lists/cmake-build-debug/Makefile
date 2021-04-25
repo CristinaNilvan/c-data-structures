@@ -169,6 +169,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\depth_first_search_adjacency_lists.dir\build.make CMakeFiles/depth_first_search_adjacency_lists.dir/main.c.s
 .PHONY : main.c.s
 
+stack.obj: stack.c.obj
+
+.PHONY : stack.obj
+
+# target to build an object file
+stack.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\depth_first_search_adjacency_lists.dir\build.make CMakeFiles/depth_first_search_adjacency_lists.dir/stack.c.obj
+.PHONY : stack.c.obj
+
+stack.i: stack.c.i
+
+.PHONY : stack.i
+
+# target to preprocess a source file
+stack.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\depth_first_search_adjacency_lists.dir\build.make CMakeFiles/depth_first_search_adjacency_lists.dir/stack.c.i
+.PHONY : stack.c.i
+
+stack.s: stack.c.s
+
+.PHONY : stack.s
+
+# target to generate assembly for a file
+stack.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\depth_first_search_adjacency_lists.dir\build.make CMakeFiles/depth_first_search_adjacency_lists.dir/stack.c.s
+.PHONY : stack.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -181,6 +208,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... stack.obj
+	@echo ... stack.i
+	@echo ... stack.s
 .PHONY : help
 
 

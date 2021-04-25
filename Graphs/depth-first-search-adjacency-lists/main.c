@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-typedef struct nodeType
-{
-    int key;
-    struct nodeType * next;
-} Node;
+#include "stack.h"
 
 typedef struct
 {
@@ -30,16 +25,6 @@ void printError()
 {
     printf("Not enough memory!\n");
     exit(1);
-}
-
-Node * createNode(int key)
-{
-    Node * node = (Node *)malloc(sizeof(Node));
-
-    node->key = key;
-    node->next = NULL;
-
-    return node;
 }
 
 void allocateMemoryForGraph(Graph * graph)

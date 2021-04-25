@@ -93,12 +93,12 @@ clean: CMakeFiles/depth_first_search_adjacency_lists.dir/clean
 CMakeFiles/depth_first_search_adjacency_lists.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\depth_first_search_adjacency_lists.dir\build.make CMakeFiles/depth_first_search_adjacency_lists.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\depth_first_search_adjacency_lists.dir\build.make CMakeFiles/depth_first_search_adjacency_lists.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Code\git\c-data-structures\Graphs\depth-first-search-adjacency-lists\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target depth_first_search_adjacency_lists"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Code\git\c-data-structures\Graphs\depth-first-search-adjacency-lists\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target depth_first_search_adjacency_lists"
 .PHONY : CMakeFiles/depth_first_search_adjacency_lists.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/depth_first_search_adjacency_lists.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Graphs\depth-first-search-adjacency-lists\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Graphs\depth-first-search-adjacency-lists\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/depth_first_search_adjacency_lists.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Code\git\c-data-structures\Graphs\depth-first-search-adjacency-lists\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/depth_first_search_adjacency_lists.dir/rule

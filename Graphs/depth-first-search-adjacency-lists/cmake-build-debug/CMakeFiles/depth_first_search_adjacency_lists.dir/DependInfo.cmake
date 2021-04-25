@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "D:/Code/git/c-data-structures/Graphs/depth-first-search-adjacency-lists/main.c" "D:/Code/git/c-data-structures/Graphs/depth-first-search-adjacency-lists/cmake-build-debug/CMakeFiles/depth_first_search_adjacency_lists.dir/main.c.obj"
+  "D:/Code/git/c-data-structures/Graphs/depth-first-search-adjacency-lists/stack.c" "D:/Code/git/c-data-structures/Graphs/depth-first-search-adjacency-lists/cmake-build-debug/CMakeFiles/depth_first_search_adjacency_lists.dir/stack.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
